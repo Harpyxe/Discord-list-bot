@@ -11,14 +11,9 @@
 
 #Imports
 import os
-from pickletools import string1
 from sys import prefix
-from turtle import pos, position, title
-from urllib import response
 from dotenv import load_dotenv
-import unicodedata
 import discord
-import asyncio
 import nekos
 import requests
 from discord.ext.commands import Bot
