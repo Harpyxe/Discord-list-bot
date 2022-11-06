@@ -264,8 +264,8 @@ async def on_message(message):
         colour = 0xffb6c1
         )
 
-        embedVar.add_field(name="list commands", 
-        value="!list \n !listof @user \n !addlist (dont) \n !editlistX X=0-9 / 0=10",
+        embedVar.add_field(name="Waifu list commands", 
+        value="!list \n !listof @user \n !addlist (dont) \n !edit number content \n Use - instead of spaces!",
         inline=False)
 
 
