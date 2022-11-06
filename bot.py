@@ -148,117 +148,35 @@ async def on_message(message):
                     n.close()
 
 
-#edit your own list
-# Will get reworked
-    if message.content.startswith("!editlist"):
-        with open('list.txt', 'r') as list:
-            list = list.readlines()
+#edit function
+    if message.content.startswith("!edit"+" "):
+        with open('waifu_list.txt', 'r') as waifu:
+            waifulist = waifu.readlines()
             user_id = str(message.author.id)
             counter = 0
-            for word in list:
+            for word in waifulist:
                 counter = counter + 1
                 if user_id in word:
-                    list.close()
-                    if message.content.startswith("!editlist1"):
-                        with open('list.txt', 'r', encoding='utf-8') as file:
+                    msg = message.content
+                    pos = message.content.split()
+
+
+#Check if number is between 1-10
+                    check = range(1, 11, 1)
+                    check_int = int(pos[1])
+
+                    if check_int in check:
+
+
+#Actually edit the list
+                        with open('waifu_list.txt', 'r', encoding='utf-8') as file:
                             data = file.readlines()
-                        msg = message.content
-                        con = msg.split(" " , 1)
-                        data[counter] = "1.  "+ str(con[1])+"\n"
-                        
-                        with open('list.txt', 'w', encoding='utf-8') as file:
-                            file.writelines(data)
-                            file.close()
-                    elif message.content.startswith("!editlist2"):
-                        with open('list.txt', 'r', encoding='utf-8') as file:
-                            data = file.readlines()
-                        msg = message.content
-                        con = msg.split(" " , 1)
-                        data[counter + 1] = "2.  "+ str(con[1])+"\n"
-                        
-                        with open('list.txt', 'w', encoding='utf-8') as file:
-                            file.writelines(data)
-                            file.close()
-                    elif message.content.startswith("!editlist3"):
-                        with open('list.txt', 'r', encoding='utf-8') as file:
-                            data = file.readlines()
-                        msg = message.content
-                        con = msg.split(" " , 1)
-                        data[counter + 2] = "3.  "+ str(con[1])+"\n"
-                        
-                        with open('list.txt', 'w', encoding='utf-8') as file:
-                            file.writelines(data)
-                            file.close()
-                    elif message.content.startswith("!editlist4"):
-                        with open('list.txt', 'r', encoding='utf-8') as file:
-                            data = file.readlines()
-                        msg = message.content
-                        con = msg.split(" " , 1)
-                        data[counter + 3] = "4.  "+ str(con[1])+"\n"
-                        
-                        with open('list.txt', 'w', encoding='utf-8') as file:
-                            file.writelines(data)
-                            file.close()
-                    elif message.content.startswith("!editlist5"):
-                        with open('list.txt', 'r', encoding='utf-8') as file:
-                            data = file.readlines()
-                        msg = message.content
-                        con = msg.split(" " , 1)
-                        data[counter + 4] = "5.  "+ str(con[1])+"\n"
-                        
-                        with open('list.txt', 'w', encoding='utf-8') as file:
-                            file.writelines(data)
-                            file.close()
-                    elif message.content.startswith("!editlist6"):
-                        with open('list.txt', 'r', encoding='utf-8') as file:
-                            data = file.readlines()
-                        msg = message.content
-                        con = msg.split(" " , 1)
-                        data[counter + 5] = "6.  "+ str(con[1])+"\n"
-                        
-                        with open('list.txt', 'w', encoding='utf-8') as file:
-                            file.writelines(data)
-                            file.close()
-                    elif message.content.startswith("!editlist7"):
-                        with open('list.txt', 'r', encoding='utf-8') as file:
-                            data = file.readlines()
-                        msg = message.content
-                        con = msg.split(" " , 1)
-                        data[counter + 6] = "7.  "+ str(con[1])+"\n"
-                        
-                        with open('list.txt', 'w', encoding='utf-8') as file:
-                            file.writelines(data)
-                            file.close()
-                    elif message.content.startswith("!editlist8"):
-                        with open('list.txt', 'r', encoding='utf-8') as file:
-                            data = file.readlines()
-                        msg = message.content
-                        con = msg.split(" " , 1)
-                        data[counter + 7] = "8.  "+ str(con[1])+"\n"
-                        
-                        with open('list.txt', 'w', encoding='utf-8') as file:
-                            file.writelines(data)
-                            file.close()
-                    elif message.content.startswith("!editlist9"):
-                        with open('list.txt', 'r', encoding='utf-8') as file:
-                            data = file.readlines()
-                        msg = message.content
-                        con = msg.split(" " , 1)
-                        data[counter + 8] = "9.  "+ str(con[1])+"\n"
-                        
-                        with open('list.txt', 'w', encoding='utf-8') as file:
-                            file.writelines(data)
-                            file.close()
-                    elif message.content.startswith("!editlist0"):
-                        with open('list.txt', 'r', encoding='utf-8') as file:
-                            data = file.readlines()
-                        msg = message.content
-                        con = msg.split(" " , 1)
-                        data[counter + 9] = "10. "+ str(con[1])+"\n"
-                        
-                        with open('list.txt', 'w', encoding='utf-8') as file:
-                            file.writelines(data)
-                            file.close()
+    
+                            data[check_int] = pos[1]+". "+ str(pos[2])+"\n"
+
+                            with open('waifu_list.txt', 'w', encoding='utf-8') as file:
+                                file.writelines(data)
+                                file.close()
 
 
 
