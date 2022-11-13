@@ -213,7 +213,7 @@ async def on_message(message):
 #current Apex Legends map ["current"]["tag"]
     if message.content.startswith(prefix_apex+" "+"map"):
 
-        resp = requests.get("https://api.mozambiquehe.re/maprotation?auth=966aeadd0efd48191f9979c5b419d6c7")
+        resp = requests.get("https://api.mozambiquehe.re/maprotation?auth="YOUR API KEY"")
         data = resp.json()
 
 
@@ -238,7 +238,7 @@ async def on_message(message):
 #current Apex Legends predator stats ["current"]["tag"]
     if message.content.startswith(prefix_apex+" "+"predator"):
 
-        resp = requests.get("https://api.mozambiquehe.re/predator?auth=966aeadd0efd48191f9979c5b419d6c7")
+        resp = requests.get("https://api.mozambiquehe.re/predator?auth="YOUR API KEY"")
         data = resp.json()
 
 
