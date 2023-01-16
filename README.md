@@ -6,11 +6,11 @@ The Bot now scrapes https://special.goodsmile.info/popupparade/en/ for new relea
 
 There are also some random commands like seeing the current Apex Legends map or getting an image from an API tag.
 
-###Important commands: <br>
-> !help <br>
-> !help pic <br>
-> !list <br>
-> !listof @user <br>
-> !quote (@user) <br>
+######Important commands:
+!help <br>
+!help pic
+!list
+!listof @user
+!quote (@user)
 
 and more!
