@@ -23,7 +23,7 @@ and more!
 ##Example Command: <br>
 > !list
 
-> @users Waifu list: 
+> @users <content> list: 
 > 
 > 1. 
 > 2. 
