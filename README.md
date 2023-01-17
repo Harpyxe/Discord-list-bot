@@ -3,7 +3,8 @@ A small Discord bot to write list and see other users lists. List could be favou
 
 The Bot can either be used with the Prefix "!" or with the Discord "/" commands.
 
-Furthermore the bot can support a quot system.
+Furthermore the bot supports a quote system.
+>quotes.json
 
 The Bot now scrapes https://special.goodsmile.info/popupparade/en/ for new releases and sends them via a specific channel.
 
