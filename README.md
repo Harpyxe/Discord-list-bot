@@ -22,16 +22,17 @@ and more!
 
 ##Example Command: <br>
 > !list
-
-> @users <content> list: 
-> 
-> 1. 
-> 2. 
-> 3. 
-> 4. 
-> 5. 
-> 6. 
-> 7. 
-> 8. 
-> 9. 
-> 10.
+```
+@users <content> list: 
+ 
+1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+10.
+```
